@@ -3,10 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Robert Svensson</title>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="https://cdn.rawgit.com/showdownjs/showdown/1.8.6/dist/showdown.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
-    <div class="main">
-      Hello
+    <div class="mainContainer">
+
+      <div class="name">
+        robert svensson
+      </div>
+
+          <div id="presentation">
+          </div>
+
+          <script>
+          var client = contentful.createClient({
+            space: 'ytuht21pyqe9',
+            accessToken: '332191cb45c730afbcde17ed3b8e3be1ac4d2535f15b76d282aef86d106ec6da'
+          })
+
+          var converter = new showdown.Converter();
+
+          client.getEntry('4BpYYyU9hSIug4g0uwaOUY')
+          .then(function (entry) {
+            console.log(entry.fields);
+            document.getElementById("presentation").innerHTML = converter.makeHtml(entry.fields.body);
+          })
+          </script>
+
     </div>
+
   </body>
 </html>

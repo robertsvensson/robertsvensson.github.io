@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant|Bitter|Crimson+Text');
+
+.name{
+  font-family: Assistant;
+  font-size: 54pt;
+  text-transform: uppercase;
+}
+
+#presentation{
+font-family: "Crimson Text";
+font-size: 16pt;
+}
