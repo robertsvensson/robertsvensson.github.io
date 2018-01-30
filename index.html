@@ -28,7 +28,6 @@
 
           client.getEntry('4BpYYyU9hSIug4g0uwaOUY')
           .then(function (entry) {
-            console.log(entry.fields);
             document.getElementById("presentation").innerHTML = converter.makeHtml(entry.fields.body);
           })
           </script>
