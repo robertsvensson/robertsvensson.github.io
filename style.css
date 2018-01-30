@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant|Bitter|Crimson+Text');
 
+.mainContainer{
+  max-width: 600px;
+}
+
+
 .name{
   font-family: Assistant;
   font-size: 54pt;
