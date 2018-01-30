@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Assistant|Bitter|Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Assistant|Crimson+Text');
 
 .mainContainer{
   max-width: 600px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 25px;
 }
-
 
 .name{
   font-family: Assistant;
@@ -16,4 +15,12 @@
 #presentation{
 font-family: "Crimson Text";
 font-size: 16pt;
+}
+
+img{
+  float: left;
+  margin: 4px 10px 0px 0px;
+  border: 1px
+  solid #000000;
+  margin-right: 30px;
 }
